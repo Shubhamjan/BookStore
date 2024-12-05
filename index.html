@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .title{
+            color: red;
+            font-variant: small-caps;
+            font-weight:bolder;
+        }
+        .bar{
+            background-color: rgb(30, 200, 219);
+            height: 70px;
+        }
+        a:hover{
+            font-size: large;
+            color: blue;
+        }
+        .im{
+            height:250px
+        }
+        .fo{
+            background-color: rgb(3, 3, 3);
+        }
+        .car:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Hello, world!</h1> -->
+    <!-- Navbar started -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid bar">
+          <a class="navbar-brand fs-2 title" href="#">BookStore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-2 ms-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item me-2 ms-2">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item dropdown me-2 ms-2">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu me-2 ms-2">
+                  <li><a class="dropdown-item" href="Historical.html">Historical</a></li>
+                  <li><a class="dropdown-item" href="Scientific.html">Scientific</a></li>
+                  <li><a class="dropdown-item" href="Classic.html">Classic</a></li>
+                  <li><a class="dropdown-item" href="Comedy.html">Comedy</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item me-2 ms-2">
+                <a class="nav-link" href="About.html"></a>
+              </li> -->
+              <li class="nav-item me-2 ms-2">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item me-2 ms-2">
+                <a class="nav-link" href="Register.html">Sign up</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar ended -->
+
+   
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.nli.ie/sites/default/files/styles/image_with_caption_small/public/2022-10/nli-oct-screen-res-56.jpg?h=78aab1d8&itok=_7BMPfoO" class="d-block w-100" height="500px" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="font-size: 40px;">Discover bestsellers, classics, and hidden gems waiting for you.</h5>
+              <!-- <p>Some representative placeholder content for the first slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-e1464023124869.jpeg" class="d-block w-100"height="500px" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="font-size: 40px;">find inspiration, adventure, and knowledge in every page.</h5>
+              <!-- <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/1926988/pexels-photo-1926988.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" height="500px" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="font-size: 40px;">Dive into the endless possibilities of our curated collections.</h5>
+              <!-- <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+     <!-- Carousel ended -->
+      <br>
+      <!-- card started -->
+      
+      <div class="container">
+        <div class="row">
+            <div class="col"><div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded car" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/81BE7eeKzAL.jpg" class="card-img-top im" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Rich Dad Poor Dad</h5>
+                  <p class="card-text">"Rich Dad Poor Dad" is the ultimate guide to mastering financial freedom and building wealth through smart investments and mindset shifts.</p>
+                </div>
+              </div></div>
+            <div class="col"><div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded car" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/61zZzKlLleL.jpg" class="card-img-top im" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Discovery Of India</h5>
+                  <p class="card-text">"The Discovery of India" is a timeless journey through India's rich history, culture, and heritage, penned by Jawaharlal Nehru with profound insight and passion.</p>
+                </div>
+              </div></div>
+            <div class="col"><div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded car" style="width: 18rem;">
+                <img src="https://buzz.iloveindia.com/wp-content/uploads/2015/08/indian-books-40.jpg" class="card-img-top im" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Wings Of Fire</h5>
+                  <p class="card-text">"Wings of Fire" is an inspiring journey of Dr. A.P.J. Abdul Kalam, showcasing how dreams and determination can ignite extraordinary achievements.</p>
+                </div>
+              </div></div>
+        </div>
+      </div>
+       <!-- card ended -->
+
+       <!-- Footer start -->
+       <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+          <p>
+            <a href="#" class="text-white me-3">Privacy Policy</a>
+            <a href="#" class="text-white">Terms of Service</a>
+          </p>
+        </div>
+      </footer>
+      
+        <!-- Footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
